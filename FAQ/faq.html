@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="faq_section.css" type="text/css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="faq_section">
+            <div class="faq_header">
+                <h2>FAQ</h2>
+            </div>
+            <div class="quection_section">
+                <div class="quection">
+                    <p>What is Javascript?</p>
+                    <div class="box">^</div>
+                </div>
+                <div class="answe_sec">
+                    <p class="txt">Java script is scriptting language to manipulate the client side interface</p>
+                </div>
+                <hr>
+            </div>
+            <div class="quection_section">
+                <div class="quection">
+                    <p>What is DOM Manipulation of JS?</p>
+                    <div class="box">^</div>
+                </div>
+                <div class="answe_sec">
+                    <p class="txt">DOM is Document object Manipulation</p>
+                </div>
+                <hr>
+            </div>
+            <div class="quection_section">
+                <div class="quection">
+                    <p>What is the Objects of JS?</p>
+                    <div class="box">^</div>
+                </div>
+                <div class="answe_sec">
+                    <p class="txt">Object is collection of the data such as Array, String , Interger likewise.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos tempore numquam cupiditate odit corrupti sequi debitis,
+                         laudantium earum quod similique quos aut iusto soluta illo hic consectetur repellat perspiciatis facilis!
+                    </p>
+                </div>
+                <hr>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <script>
+
+        var click = document.querySelectorAll(".box");
+        var answer = document.querySelectorAll(".answe_sec");
+
+        for(let i = 0; i<3; i++){
+
+            click[i].addEventListener('click',()=>{
+
+                answer[i].classList.toggle("active");
+                click[i].classList.toggle('active');
+
+            })
+        }
+
+
+    </script>
+    
+</body>
+</html>
